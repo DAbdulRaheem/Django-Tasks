@@ -1,8 +1,8 @@
 from django.db import models
 
 class Student(models.Model):
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
     age = models.IntegerField()
     roll_number = models.IntegerField(unique=True)
 
@@ -11,8 +11,8 @@ class Student(models.Model):
 
 
 class Employee(models.Model):
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
     employee_id = models.IntegerField(unique=True)
     department = models.CharField(max_length=100)
     salary = models.IntegerField()
